@@ -13,6 +13,7 @@
     --azul-forte: #0a58ca;
     --cinza-fraco: #D6D6D8;
     --preto-cor-input: #212529;
+    --coupon-code-bg: #6c757d2b;
     --gren-coupon-border-btncover: #8CC31D;
     --gren-coupon-title-imagebg: #76b911;
     --gren-coupon-coupon-text: #508700;
@@ -184,18 +185,6 @@ input {
     height: 140px;
 }
 .stores-grid img {
-    /*
-    ALTERAR
-    AQUI
-    PARA
-    TAMANHOS
-    FIXOS.
-
-    99 des
-    82 acess
-    83 p re
-    88 seo
-    */
     width: 140px;
     height: 140px;
     border-radius: 4px;
@@ -224,9 +213,9 @@ input {
 .green-border {
     border: solid 2px var(--gren-coupon-border-btncover);
 }
-.green-image-bg {
+/* .green-image-bg {
     background-color: var(--gren-coupon-title-imagebg);
-}
+} */
 .green-title {
     color: var(--gren-coupon-title-imagebg);
 }
@@ -263,7 +252,8 @@ input {
 .counpon-info-area--text {
     flex: 2;
     display: flex;
-    padding: 8px;
+    padding-top: 8px;
+    padding-right: 8px;
     flex-direction: column;
 }
 .coupon-title {
@@ -306,17 +296,32 @@ input {
     width: 18px;
     height: 18px;
 }
-
-
-
-
-
-
 .coupon-button-area {
     width: 100%;
-    background-color: pink;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+.coupon-code-area {
+    width: 80%;
+    height: 50px;
+    text-align: end;
+    background-color: var(--coupon-code-bg);
+    border-radius: 6px;
+    border: 1px dashed var(--gren-coupon-coupon-text);
+    position: relative;
+}
+.coupon-code-area--text {
+    width: 94%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--gren-coupon-coupon-text);
+}
 /* 
 
 */

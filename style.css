@@ -13,8 +13,9 @@
     --azul-forte: #0a58ca;
     --cinza-fraco: #D6D6D8;
     --preto-cor-input: #212529;
-    --gren-coupon: #8CC31D;
-    --gren-coupontitle-and-image-bg: #76b911;
+    --gren-coupon-border-btncover: #8CC31D;
+    --gren-coupon-title-imagebg: #76b911;
+    --gren-coupon-coupon-text: #508700;
 }
 * {
     margin: 0;
@@ -84,11 +85,15 @@ input {
 .header-nav {
     width: 100%;
     display: flex;
+    justify-content: center;
     list-style: none;
 }
 .nav-item {
+    min-width: 88px;
     margin: auto;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
 .nav-item-link {
     color: var(--white);
@@ -162,8 +167,8 @@ input {
     gap: 10px;
 }
 .grid-item {
-    width: 100%;
-    height: 100%;
+    width: 140px;
+    height: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -171,12 +176,19 @@ input {
     border-radius: 4px;
 }
 .grid-item-link{
-    width: 100%;
-    height: 100%;
+    width: 140px;
+    height: 140px;
 }
 .stores-grid img {
-    width: 100%;
-    height: 100%;
+    /*
+    ALTERAR
+    AQUI
+    PARA
+    TAMANHOS
+    FIXOS.
+    */
+    width: 140px;
+    height: 140px;
     border-radius: 4px;
     border: 1px solid var(--cinza-fraco);
     object-fit: cover;
@@ -201,19 +213,13 @@ input {
 
 /* coupons colors styles */
 .green-border {
-    border: solid 2px var(--gren-coupon-color);
+    border: solid 2px var(--gren-coupon-border-btncover);
 }
 .green-image-bg {
-    background-color: var(--gren-coupon-color-title-and-bg);
+    background-color: var(--gren-coupon-title-imagebg);
 }
 .green-title {
-    color: var(--gren-coupon-color-title-and-bg);
-}
-.green-border {
-    border: solid 2px var(--gren-coupon-color);
-}
-.green-bg-cover {
-
+    color: var(--gren-coupon-title-imagebg);
 }
 
 /* coupon styles*/
@@ -223,7 +229,7 @@ input {
     min-height: 120px;
     display: flex;
     flex-direction: column;
-
+    background-color: white;
     margin: 10px 0;
     border-radius: 6px;
 }

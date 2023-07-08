@@ -163,11 +163,11 @@ input {
 /* GRID AREA */
 .stores-grid {
     width: calc(100% - 20px);
-    max-width: 1320px;
+    max-width: 964px;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     gap: 10px;
 }
@@ -196,7 +196,7 @@ input {
 /* COUPONS AREA */
 .main-container {
     width: calc(100% - 20px);
-    max-width: 1320px;
+    max-width: 964px;
     margin: auto;
     display: flex;
 }
@@ -321,7 +321,36 @@ input {
     font-size: 1.8em;
     font-weight: 700;
     color: var(--gren-coupon-coupon-text);
+    text-transform: uppercase;
+    position: relative;
+}
+.coupon-btn {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.40em;
+    background-color: var(--gren-coupon-border-btncover);
+    overflow: hidden;
 }
 /* 
 
 */
+.folded-corner {
+    width: 33px;
+    height: 100%;
+    position: absolute;
+    top: 2px;
+    right: -18px;
+    transform: rotate(-0.9turn);
+    background-color: var(--white);
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  }

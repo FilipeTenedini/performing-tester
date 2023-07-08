@@ -90,13 +90,17 @@ input {
 }
 .nav-item {
     min-width: 88px;
-    margin: auto;
+    min-height: 44px;
+    background-color: var(--white);
+    margin: auto 10px;
     cursor: pointer;
     display: flex;
+    align-items: center;
     justify-content: center;
+    border-radius: 4px;
 }
 .nav-item-link {
-    color: var(--white);
+    color: var(--azul-link);
     text-decoration: none;
 }
 .nav-item:hover {
@@ -109,7 +113,7 @@ input {
 }
 .dropdown {
     position: relative;
-    color: var(--white);
+    color: var(--azul-link);
 }
 .dropdown::after {
     content: "";
@@ -186,6 +190,11 @@ input {
     PARA
     TAMANHOS
     FIXOS.
+
+    99 des
+    82 acess
+    83 p re
+    88 seo
     */
     width: 140px;
     height: 140px;

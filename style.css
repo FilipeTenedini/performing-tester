@@ -204,6 +204,11 @@ input {
     margin: auto;
     display: flex;
 }
+.content-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 .list-coupons-area {
     width: 100%;
     max-width: 964px;
@@ -392,4 +397,30 @@ input {
     background-color: var(--white);
     border-radius: 4px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+
+/* PANEL AREA */
+
+.panel-title {
+    font-size: 1.4em;
+    font-weight: 500;
+    color: var(--chumbo);
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.panel-description-area p {
+    color: var(--chumbo);
+    line-height: 20px;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+.panel-description-area li {
+    color: var(--chumbo);
+    line-height: 20px;
+    font-size: 0.9em;
+    margin-left: 22px;
+}
+.panel-description-area li:last-child {
+    margin-bottom: 5px;
 }

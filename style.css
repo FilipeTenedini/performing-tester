@@ -16,7 +16,11 @@
     --coupon-code-bg: #6c757d2b;
     --gren-coupon-border-btncover: #8CC31D;
     --gren-coupon-title-imagebg: #76b911;
-    --gren-coupon-coupon-text: #508700;
+    --gren-coupon-dashedborder-code: #508700;
+    --orange-coupon-border-btncover: #D77536;
+    --orange-coupon-imagebg: #f57f0d;
+    --orange-coupon-title: #ef5026;
+    --orange-dashedborder-code: #9b3900;
 }
 * {
     margin: 0;
@@ -213,12 +217,43 @@ input {
 .green-border {
     border: solid 2px var(--gren-coupon-border-btncover);
 }
+.green-btn {
+    background-color: var(--gren-coupon-border-btncover);
+}
 /* .green-image-bg {
     background-color: var(--gren-coupon-title-imagebg);
 } */
 .green-title {
     color: var(--gren-coupon-title-imagebg);
 }
+.green-code {
+    color: var(--gren-coupon-dashedborder-code);
+}
+.green-dashed-border {
+    border: 1px dashed var(--gren-coupon-dashedborder-code);
+}
+
+.orange-border {
+    border: solid 2px var(--orange-coupon-border-btncover);
+}
+.orange-btn {
+    background-color: var(--orange-coupon-border-btncover);
+}
+/* .orange-image-bg {
+    background-color: var(--gren-coupon-title-imagebg);
+} */
+.orange-title {
+    color: var(--orange-coupon-title);
+}
+.orange-code {
+    color: var(--orange-dashedborder-code);
+}
+.orange-dashed-border {
+    border: 1px dashed var(--orange-dashedborder-code);
+}
+
+
+
 
 /* coupon styles*/
 .coupon {
@@ -309,7 +344,6 @@ input {
     text-align: end;
     background-color: var(--coupon-code-bg);
     border-radius: 6px;
-    border: 1px dashed var(--gren-coupon-coupon-text);
     position: relative;
 }
 .coupon-code-area--text {
@@ -320,13 +354,12 @@ input {
     justify-content: flex-end;
     font-size: 1.8em;
     font-weight: 700;
-    color: var(--gren-coupon-coupon-text);
     text-transform: uppercase;
     position: relative;
 }
+
 .coupon-btn {
     height: 100%;
-    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -337,12 +370,18 @@ input {
     color: var(--white);
     font-weight: 700;
     font-size: 1.40em;
-    background-color: var(--gren-coupon-border-btncover);
     overflow: hidden;
+    text-transform: uppercase;
 }
-/* 
-
-*/
+.btn-code-opened {
+    display: none;
+}
+.btn-code-half-opened {
+    width: 88%;
+}
+.btn-code-closed {
+    width: 100%;
+}
 .folded-corner {
     width: 33px;
     height: 100%;
@@ -353,4 +392,4 @@ input {
     background-color: var(--white);
     border-radius: 4px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
-  }
+}

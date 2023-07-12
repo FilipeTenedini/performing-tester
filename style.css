@@ -4,6 +4,7 @@
     --white: #FFF;
     --bg-color: #F3F3F4;
     --cinza-fraco: #ECECEC;
+    --cinza-medio-fraco: #E8E8E8;
     --cinza-medio: #6B6B6B;
     --chumbo: #333;
     --azul-fraco: #3ab1ff;
@@ -11,6 +12,7 @@
     --azul-medio-forte: #0d7dc6;
     --azul-link: #0d6efd;
     --azul-forte: #0a58ca;
+    --roxo: #582e9a;
     --cinza-fraco: #D6D6D8;
     --preto-cor-input: #212529;
     --coupon-code-bg: #6c757d2b;
@@ -423,4 +425,41 @@ input {
 }
 .panel-description-area li:last-child {
     margin-bottom: 5px;
+}
+
+
+/* FOOTER AREA */
+
+footer {
+    width: 100%;
+    font-size: 0.89em;
+    line-height: 16px;
+    font-weight: 400;
+}
+.footer-social-media-area {
+    width: 100%;
+    height: 60px;
+    background-color: var(--roxo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .container {
+    margin: auto;
+}
+.about-us--title {
+    width: 100%;
+}
+.footer-text {
+    margin-bottom: 10px;
+}
+.about-us {
+    padding: 10px 0 25px 0;
+    color: var(--chumbo);
+    background-color: var(--white);
+    border-bottom: 1px solid var(--cinza-medio-fraco);
+}
+.about-us--information {
+    color: var(--chumbo);
+    padding: 10px 0;
 }

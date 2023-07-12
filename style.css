@@ -16,13 +16,17 @@
     --cinza-fraco: #D6D6D8;
     --preto-cor-input: #212529;
     --coupon-code-bg: #6c757d2b;
-    --gren-coupon-border-btncover: #8CC31D;
-    --gren-coupon-title-imagebg: #76b911;
-    --gren-coupon-dashedborder-code: #508700;
+    --green-coupon-border-btncover: #8CC31D;
+    --green-coupon-title-imagebg: #76b911;
+    --green-coupon-dashedborder-code: #508700;
     --orange-coupon-border-btncover: #D77536;
     --orange-coupon-imagebg: #f57f0d;
     --orange-coupon-title: #ef5026;
     --orange-dashedborder-code: #9b3900;
+    --black-coupon-border-btncover: #131313;
+    --black-coupon-imagebg: #131313;
+    --black-coupon-title: #333;
+    --black-dashedborder-code: #333;
 }
 * {
     margin: 0;
@@ -222,22 +226,22 @@ input {
 
 /* coupons colors styles */
 .green-border {
-    border: solid 2px var(--gren-coupon-border-btncover);
+    border: solid 2px var(--green-coupon-border-btncover);
 }
 .green-btn {
-    background-color: var(--gren-coupon-border-btncover);
+    background-color: var(--green-coupon-border-btncover);
 }
 /* .green-image-bg {
-    background-color: var(--gren-coupon-title-imagebg);
+    background-color: var(--green-coupon-title-imagebg);
 } */
 .green-title {
-    color: var(--gren-coupon-title-imagebg);
+    color: var(--green-coupon-title-imagebg);
 }
 .green-code {
-    color: var(--gren-coupon-dashedborder-code);
+    color: var(--green-coupon-dashedborder-code);
 }
 .green-dashed-border {
-    border: 1px dashed var(--gren-coupon-dashedborder-code);
+    border: 1px dashed var(--green-coupon-dashedborder-code);
 }
 
 .orange-border {
@@ -247,7 +251,7 @@ input {
     background-color: var(--orange-coupon-border-btncover);
 }
 /* .orange-image-bg {
-    background-color: var(--gren-coupon-title-imagebg);
+    background-color: var(--orange-coupon-title-imagebg);
 } */
 .orange-title {
     color: var(--orange-coupon-title);
@@ -259,6 +263,24 @@ input {
     border: 1px dashed var(--orange-dashedborder-code);
 }
 
+.black-border {
+    border: solid 2px var(--black-coupon-border-btncover);
+}
+.black-btn {
+    background-color: var(--black-coupon-border-btncover);
+}
+/* .black-image-bg {
+    background-color: var(--black-coupon-title-imagebg);
+} */
+.black-title {
+    color: var(--black-coupon-title);
+}
+.black-code {
+    color: var(--black-dashedborder-code);
+}
+.black-dashed-border {
+    border: 1px dashed var(--black-dashedborder-code);
+}
 
 
 
@@ -452,6 +474,7 @@ footer .container {
 }
 .footer-text {
     margin-bottom: 10px;
+    width: 100%;
 }
 .about-us {
     padding: 10px 0 25px 0;

@@ -535,7 +535,7 @@ aside {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+    border-radius: 4px;
     padding: 5px;
     margin-bottom: 5px;
 }

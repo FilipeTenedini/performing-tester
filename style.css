@@ -240,6 +240,9 @@ input {
 .green-btn {
     background-color: var(--green-coupon-border-btncover);
 }
+.green-btn:hover {
+    background-color: var(--green-coupon-dashedborder-code);
+}
 /* .green-image-bg {
     background-color: var(--green-coupon-title-imagebg);
 } */
@@ -258,6 +261,9 @@ input {
 }
 .orange-btn {
     background-color: var(--orange-coupon-border-btncover);
+}
+.orange-btn:hover {
+    background-color: var(--orange-dashedborder-code);
 }
 /* .orange-image-bg {
     background-color: var(--orange-coupon-title-imagebg);
@@ -278,6 +284,9 @@ input {
 .black-btn {
     background-color: var(--black-coupon-border-btncover);
 }
+.black-btn:hover {
+    background-color: var(--black);
+}
 /* .black-image-bg {
     background-color: var(--black-coupon-title-imagebg);
 } */
@@ -290,7 +299,6 @@ input {
 .black-dashed-border {
     border: 1px dashed var(--black-dashedborder-code);
 }
-
 
 
 /* coupon styles*/
@@ -410,7 +418,9 @@ input {
     font-size: 1.40em;
     overflow: hidden;
     text-transform: uppercase;
+    transition: .2s;
 }
+
 .btn-code-opened {
     display: none;
 }
@@ -523,6 +533,11 @@ aside {
     border-radius: 5px;
     padding: 5px;
     position: relative;
+    cursor: pointer;
+    transition: .3s;
+}
+.network-component:hover {
+    transform: scale(1.05);
 }
 .network-component--link {
     width: 100%;
@@ -598,6 +613,11 @@ footer {
 .social-media-symbol {
     color: var(--white);
     font-size: 24px;
+    cursor: pointer;
+    transition: .3s;
+}
+.social-media-symbol:hover {
+    transform: scale(1.2);
 }
 footer .container {
     margin: auto;

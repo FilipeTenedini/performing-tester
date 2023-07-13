@@ -472,9 +472,85 @@ aside {
     margin-bottom: 10px;
 }
 .our-contacts {
-
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
 }
-.our-contacts
+.our-contacts--network-links {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+.instabg {
+    background: linear-gradient(45deg, #833ab4, #fd1d1d, #f77737, #fcaf45);
+}
+.instabgi {
+    background-image: linear-gradient(45deg, #833ab4, #fd1d1d, #f77737, #fcaf45);
+}
+.twitterbg {
+    background: linear-gradient(45deg, #00aff1, #00bcf1);
+}
+.twitterbgi {
+    background-image: linear-gradient(45deg,#00aff1, #00bcf1);
+}
+.facebg {
+    background: linear-gradient(45deg, #0075C0, #0090BF);
+}
+.facebgi {
+    background-image: linear-gradient(45deg, #0075C0, #0090BF);
+}
+.telegrambg {
+    background: linear-gradient(45deg, #17B7F3, #00BFF1);
+}
+.telegrambgi {
+    background-image: linear-gradient(45deg, #17B7F3, #00BFF1);
+}
+.network-component {
+    display: flex;
+    background-color: var(--white);
+    align-items: center;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 3px;
+}
+.network-component--link {
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    padding: 5px 10px 5px 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: var(--white);
+}
+.symbol-space {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 5px;
+}
+.network-component--link ion-icon {
+    color: var(--white);
+}
+.network-component--link span {
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: var(--black);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 /* FOOTER AREA */
 footer {
     width: 100%;

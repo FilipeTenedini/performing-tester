@@ -209,11 +209,13 @@ input {
     max-width: 964px;
     margin: auto;
     display: flex;
+    flex-direction: column;
 }
 .content-area {
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 }
 .list-coupons-area {
     width: 100%;
@@ -449,9 +451,28 @@ input {
     margin-bottom: 5px;
 }
 
+aside {
+    width: 100%;
+    color: var(--chumbo);
+}
+.about-owner {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 10px;
+}
+.about-owner--title {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.about-owner--desc {
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
 
 /* FOOTER AREA */
-
 footer {
     width: 100%;
     font-size: 0.89em;
@@ -463,8 +484,18 @@ footer {
     height: 60px;
     background-color: var(--roxo);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+}
+.footer-social-media-area a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.social-media-symbol {
+    color: var(--white);
+    font-size: 24px;
 }
 footer .container {
     margin: auto;

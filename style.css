@@ -72,6 +72,10 @@ header {
     justify-content: center;
     align-items: center;
 }
+.header-logo {
+    width: 209px;
+    height: 64px;
+}
 .header-input-area {
     width: 100%;
     flex: 1;
@@ -450,7 +454,6 @@ input {
 .panel-description-area li:last-child {
     margin-bottom: 5px;
 }
-
 aside {
     width: 100%;
     color: var(--chumbo);
@@ -554,7 +557,20 @@ aside {
     -webkit-text-fill-color: transparent;
 }
 
-
+.principal-stores {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.principal-stores--area {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
 /* FOOTER AREA */
 footer {
     width: 100%;

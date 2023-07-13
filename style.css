@@ -459,8 +459,9 @@ aside {
     background-color: var(--white);
     border-radius: 10px;
     padding: 10px;
+    margin-bottom: 15px;
 }
-.about-owner--title {
+.aside-title {
     text-align: center;
     font-size: 18px;
     margin-bottom: 10px;
@@ -470,8 +471,10 @@ aside {
     padding: 0 10px;
     margin-bottom: 10px;
 }
+.our-contacts {
 
-
+}
+.our-contacts
 /* FOOTER AREA */
 footer {
     width: 100%;

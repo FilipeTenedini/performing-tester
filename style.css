@@ -515,7 +515,8 @@ aside {
     align-items: center;
     margin: 10px;
     border-radius: 5px;
-    padding: 3px;
+    padding: 5px;
+    position: relative;
 }
 .network-component--link {
     width: 100%;
@@ -523,18 +524,20 @@ aside {
     border-radius: 2px;
     padding: 5px 10px 5px 10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     text-decoration: none;
     background-color: var(--white);
 }
 .symbol-space {
-    background-color: red;
+    width: 42px;
+    height: 42px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     padding: 5px;
-    margin-right: 5px;
+    margin-bottom: 5px;
 }
 .network-component--link ion-icon {
     color: var(--white);
@@ -542,7 +545,8 @@ aside {
 .network-component--link span {
     flex: 1;
     text-align: center;
-    font-size: 16px;
+    width: 138px;
+    font-size: 0.6rem;
     letter-spacing: 2px;
     color: var(--black);
     background-clip: text;

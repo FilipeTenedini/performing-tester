@@ -243,9 +243,9 @@ input {
 .green-btn:hover {
     background-color: var(--green-coupon-dashedborder-code);
 }
-/* .green-image-bg {
+.green-image-bg {
     background-color: var(--green-coupon-title-imagebg);
-} */
+}
 .green-title {
     color: var(--green-coupon-title-imagebg);
 }
@@ -265,9 +265,9 @@ input {
 .orange-btn:hover {
     background-color: var(--orange-dashedborder-code);
 }
-/* .orange-image-bg {
-    background-color: var(--orange-coupon-title-imagebg);
-} */
+.orange-image-bg {
+    background-color: var(--orange-coupon-imagebg);
+}
 .orange-title {
     color: var(--orange-coupon-title);
 }
@@ -287,9 +287,9 @@ input {
 .black-btn:hover {
     background-color: var(--black);
 }
-/* .black-image-bg {
-    background-color: var(--black-coupon-title-imagebg);
-} */
+.black-image-bg {
+    background-color: var(--black-coupon-imagebg);
+}
 .black-title {
     color: var(--black-coupon-title);
 }

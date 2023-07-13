@@ -244,7 +244,7 @@ input {
     background-color: var(--green-coupon-dashedborder-code);
 }
 .green-image-bg {
-    background-color: var(--green-coupon-title-imagebg);
+    background-color: transparent;
 }
 .green-title {
     color: var(--green-coupon-title-imagebg);
@@ -266,7 +266,7 @@ input {
     background-color: var(--orange-dashedborder-code);
 }
 .orange-image-bg {
-    background-color: var(--orange-coupon-imagebg);
+    background-color: transparent;
 }
 .orange-title {
     color: var(--orange-coupon-title);
@@ -288,7 +288,7 @@ input {
     background-color: var(--black);
 }
 .black-image-bg {
-    background-color: var(--black-coupon-imagebg);
+    background-color: transparent;
 }
 .black-title {
     color: var(--black-coupon-title);
@@ -589,6 +589,8 @@ aside {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
 }
+
+
 /* FOOTER AREA */
 footer {
     width: 100%;
@@ -638,4 +640,17 @@ footer .container {
 .about-us--information {
     color: var(--chumbo);
     padding: 10px 0;
+}
+
+@media (min-width: 853px) {
+    .green-image-bg {
+        background-color: var(--green-coupon-title-imagebg);
+    }
+    .orange-image-bg {
+        background-color: var(--orange-coupon-imagebg);
+    }
+    .black-image-bg {
+        background-color: var(--black-coupon-imagebg);
+    }
+    
 }

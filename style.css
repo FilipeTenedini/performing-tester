@@ -717,6 +717,9 @@ footer .container {
     header .container{
         flex-direction: row;
     }
+    .stores-grid {
+        grid-template-columns: repeat(5, minmax(145px, 1fr));
+    }
 }
 @media (min-width: 1031px) {
     .main-container {

@@ -690,6 +690,9 @@ footer .container {
 
 }
 @media (min-width: 853px) {
+    .coupon-info-area {
+        height: auto;
+    }
     .green-image-bg {
         background-color: var(--green-coupon-title-imagebg);
     }
@@ -712,6 +715,9 @@ footer .container {
         flex: 1;
         height: auto;
     }
+    .coupon-tags-area {
+        margin-bottom: 5px;
+    }
 }
 @media (min-width: 899px) {
     header .container{
@@ -733,6 +739,9 @@ footer .container {
     }
     aside {
         flex: 1;
+    }
+    .coupon-code-area--text {
+        font-size: 1.3em;
     }
 }
 @media (max-width: 1320px) {

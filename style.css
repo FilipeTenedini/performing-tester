@@ -500,6 +500,8 @@ aside {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
+    justify-content: space-between;
+
 }
 .instabg {
     background: linear-gradient(45deg, #833ab4, #fd1d1d, #f77737, #fcaf45);
@@ -529,7 +531,6 @@ aside {
     display: flex;
     background-color: var(--white);
     align-items: center;
-    margin: 10px;
     border-radius: 5px;
     padding: 5px;
     position: relative;
@@ -586,10 +587,21 @@ aside {
 .principal-stores--area {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(2, 145px);
+    grid-template-rows: repeat(4, auto);
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+.store-card {
+    height: 45px;
+    background-color: var(--chumbo);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
 }
-
 
 /* FOOTER AREA */
 footer {

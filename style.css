@@ -576,7 +576,7 @@ aside {
     -webkit-text-fill-color: transparent;
 }
 
-.principal-stores {
+.aside-main {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -584,7 +584,7 @@ aside {
     justify-content: center;
     margin-bottom: 50px;
 }
-.principal-stores--area {
+.aside-main--area {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, minmax(145px, 1fr));
@@ -594,16 +594,16 @@ aside {
     list-style: none;
   }
   
-.store-card {
+.aside-main--card {
     min-height: 45px;
     background-color: var(--chumbo);
     border-radius: 10px;
     transition: .2s;
 }
-.store-card:hover {
+.aside-main--card:hover {
     transform: scale(1.1);
 }
-.store-card--link {
+.aside-main--card-link {
     width: 100%;
     height: 100%;
     font-size: 1.1em;

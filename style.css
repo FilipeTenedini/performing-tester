@@ -150,7 +150,6 @@ input {
 .title-area {
     width: 100%;
     background-color: var(--white);
-    max-width: 1320px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -178,24 +177,26 @@ input {
 
 
 /* GRID AREA */
+
 .stores-grid {
-    width: calc(100% - 20px);
-    max-width: 964px;
+    width: 100%;
+    max-width: 1320px;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(145px, 1fr));
+    grid-template-rows: repeat(4, auto);
     justify-content: space-between;
-    align-items: center;
-    gap: 10px;
+    gap: 20px;
+    list-style: none;
 }
 .grid-item {
-    width: 140px;
-    height: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
+    border: 1px solid var(--cinza-fraco);
+    background-color: var(--white);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 .grid-item-link{
     width: 140px;
@@ -205,7 +206,7 @@ input {
     width: 140px;
     height: 140px;
     border-radius: 4px;
-    border: 1px solid var(--cinza-fraco);
+    /* border: 1px solid var(--cinza-fraco); */
     object-fit: cover;
 } 
 
@@ -587,12 +588,12 @@ aside {
 .aside-main--area {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, minmax(145px, 1fr));
+    grid-template-columns: repeat(2, minmax(135px, 1fr));
     grid-template-rows: repeat(4, auto);
     justify-content: space-between;
     gap: 20px;
     list-style: none;
-  }
+}
   
 .aside-main--card {
     min-height: 45px;
@@ -666,10 +667,27 @@ footer .container {
     padding: 10px 0;
 }
 
+
+@media(min-width: 479px) {
+    .stores-grid {
+        grid-template-columns: repeat(3, minmax(145px, 1fr));
+    }
+}
 @media (min-width: 499px) {
     .principal-stores--area {
         grid-template-columns: repeat(3, minmax(145px, 1fr));
     }
+}
+@media(min-width: 639px) and (max-width: 1030px) {
+    .our-contacts--network-links {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+}
+@media(min-width: 769px) {
+    .stores-grid {
+        grid-template-columns: repeat(4, minmax(145px, 1fr));
+    }
+
 }
 @media (min-width: 853px) {
     .green-image-bg {
@@ -681,5 +699,42 @@ footer .container {
     .black-image-bg {
         background-color: var(--black-coupon-imagebg);
     }
-    
+    .coupon {
+        flex-direction: row;
+    }
+    .coupon-info-area {
+        flex: 2;
+    }
+    .coupon-info-area--image {
+        margin-right: 10px;
+    }
+    .coupon-button-area {
+        flex: 1;
+        height: auto;
+    }
+}
+@media (min-width: 899px) {
+    header .container{
+        flex-direction: row;
+    }
+}
+@media (min-width: 1031px) {
+    .main-container {
+        flex-direction: row;
+        gap: 40px;
+        width: 100%;
+        max-width: 1320px;
+    }
+    .content-area {
+        flex: 2;
+    }
+    aside {
+        flex: 1;
+    }
+}
+@media (max-width: 1320px) {
+    .stores-grid,
+    .main-container {
+        width: calc(100% - 20px);
+    }
 }

@@ -118,6 +118,8 @@ header input {
 .nav-item-link {
     color: var(--azul-link);
     text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 .nav-item:nth-child(1) .nav-item-link {
     margin-left: -7px;
@@ -505,10 +507,10 @@ aside {
 
 }
 .instabg {
-    background: linear-gradient(45deg, #833ab4, #fd1d1d, #f77737, #fcaf45);
+    background: #EB5553;
 }
 .instabgi {
-    background-image: linear-gradient(45deg, #833ab4, #fd1d1d, #f77737, #fcaf45);
+    background-image: linear-gradient(45deg, #EB5553, #EB5553);
 }
 .twitterbg {
     background: linear-gradient(45deg, #00aff1, #00bcf1);
@@ -724,6 +726,15 @@ footer .container {
 @media (min-width: 899px) {
     header .container{
         flex-direction: row;
+    }
+    .header-logo-area a {
+        justify-content: flex-start;
+    }
+    .header-nav {
+        justify-content: flex-end;
+    }
+    .nav-item:last-child {
+        margin-right: 0;
     }
     .stores-grid {
         grid-template-columns: repeat(5, minmax(145px, 1fr));

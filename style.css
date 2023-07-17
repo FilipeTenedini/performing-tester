@@ -114,6 +114,10 @@ header input {
     border-radius: 4px;
     background-color: var(--white);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    transition: .3s;
+}
+.nav-item:hover {
+    transform: scale(1.05);
 }
 .nav-item-link {
     color: var(--azul-link);
@@ -199,6 +203,10 @@ header input {
     border: 1px solid var(--cinza-fraco);
     background-color: var(--white);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: .3s;
+}
+.grid-item:hover {
+    transform: scale(1.05);
 }
 .grid-item-link{
     width: 140px;

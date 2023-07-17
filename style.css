@@ -597,7 +597,7 @@ aside {
   
 .aside-main--card {
     min-height: 45px;
-    background-color: var(--chumbo);
+    background-color: var(--azul-medio-forte);
     border-radius: 10px;
     transition: .2s;
 }
@@ -623,7 +623,6 @@ footer {
     line-height: 16px;
     font-weight: 400;
     background-color: var(--azul-medio-forte);
-
     color: var(--white);
 
 }

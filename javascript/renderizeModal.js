@@ -1,3 +1,1 @@
-function renderModal() {
-    
-}
+console.log(-17.8)

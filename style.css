@@ -738,6 +738,10 @@ footer .container {
     .coupon-info-area {
         height: auto;
     }
+    .coupon-info-area--image img {
+        width: 140px;
+        height: 140px;
+    }
     .green-image-bg {
         background-color: var(--green-coupon-title-imagebg);
     }
@@ -797,6 +801,10 @@ footer .container {
         gap: 40px;
         width: 100%;
         max-width: 1320px;
+    }
+    .coupon-info-area--image img {
+        width: 130px;
+        height: 130px;
     }
     .content-area {
         flex: 2;

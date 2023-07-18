@@ -51,7 +51,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* display: none; */
+    margin-bottom: 500px;
 }
 .modal-area {
     width: calc(100% - 20px);
@@ -60,23 +60,52 @@ body {
     background-color: var(--cinza-medio-fraco);
     margin: auto;
     position: relative;
+    border-radius: 25px;
 }
 .modal-header,
 .modal-footer {
-    height: 80px;
+    height: 100px;
     width: 100%;
-    position: absolute;
-    right: 0;
     background-color: var(--azul-fraco);
 }
 .modal-header{
-    top: 0;
     background-image: linear-gradient(var(--azul-medio-forte), var(--azul-medio-fraco), var(--azul-fraco));
+    border-radius: 5px 5px 0 0;
+}
+
+.modal-title--area {
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+.modal-title--image {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background-color: red;
+}
+.modal-title--image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.modal-title--text {
+    flex: 1;
+    color: var(--white);
+}
+.modal-title--company-name {
+    font-weight: 700;
 }
 .modal-footer {
+    position: absolute;
     bottom: 0;
+    right: 0;
     background-image: linear-gradient(var(--azul-fraco), var(--azul-medio-fraco), var(--azul-medio-forte));
+    border-radius: 0 0 5px 5px;
 }
+
+
 /* HEADER */
 header {
     width: 100%;
@@ -710,6 +739,10 @@ footer .container {
     padding: 10px 0;
 }
 
+/* modal event css */
+.blocking-scroll {
+    overflow: hidden;
+}
 @media (max-width: 434px) {
     .header-nav-area {
         width: 100%;

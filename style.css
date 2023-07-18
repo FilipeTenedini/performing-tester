@@ -51,7 +51,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 500px;
 }
 .modal-area {
     width: calc(100% - 20px);
@@ -60,7 +59,7 @@ body {
     background-color: var(--cinza-medio-fraco);
     margin: auto;
     position: relative;
-    border-radius: 25px;
+    border-radius: 5px
 }
 .modal-header,
 .modal-footer {

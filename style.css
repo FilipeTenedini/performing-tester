@@ -366,11 +366,12 @@ header input {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5px;
+    border-radius: 3px 0 0 3px;
 }
 .coupon-info-area--image img{
-    height: 100%;
-    width: 75px;
-    height: 75px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -738,10 +739,6 @@ footer .container {
     .coupon-info-area {
         height: auto;
     }
-    .coupon-info-area--image img {
-        width: 140px;
-        height: 140px;
-    }
     .green-image-bg {
         background-color: var(--green-coupon-title-imagebg);
     }
@@ -766,6 +763,11 @@ footer .container {
     }
     .coupon-tags-area {
         margin-bottom: 5px;
+    }
+}
+@media (min-width: 853px) and (max-width: 904px) {
+    .coupon-code-area--text {
+        font-size: 1.6em;
     }
 }
 @media (min-width: 899px) {
@@ -801,10 +803,6 @@ footer .container {
         gap: 40px;
         width: 100%;
         max-width: 1320px;
-    }
-    .coupon-info-area--image img {
-        width: 130px;
-        height: 130px;
     }
     .content-area {
         flex: 2;

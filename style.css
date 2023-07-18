@@ -64,47 +64,51 @@ body {
 }
 .modal-header,
 .modal-footer {
-    height: 100px;
     width: 100%;
     background-color: var(--azul-fraco);
 }
 .modal-header{
     background-image: linear-gradient(var(--azul-medio-forte), var(--azul-medio-fraco), var(--azul-fraco));
     border-radius: 5px 5px 0 0;
-}
-
-.modal-title--area {
-    width: 100%;
-    height: 100px;
     display: flex;
 }
 .modal-title--image {
     width: 100px;
-    height: 100px;
     padding: 10px;
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .modal-title--image img {
-    width: 100%;
-    height: 100%;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: fill;
 }
-.modal-title--text {
+.how-to-use {
     flex: 1;
     color: var(--white);
+    padding: 10px 1px 10px 10px;
 }
-.modal-title--company-name {
-    font-weight: 700;
+.how-to-use--list {
+    height: 100%;
+    padding-left: 15px;
+}
+.how-to-use--item {
+    
+}
+.modal-title--area {
+    width: 100%;
+    display: flex;
 }
 .modal-footer {
     position: absolute;
+    height: 100px;
     bottom: 0;
     right: 0;
     background-image: linear-gradient(var(--azul-fraco), var(--azul-medio-fraco), var(--azul-medio-forte));
     border-radius: 0 0 5px 5px;
 }
-
 
 /* HEADER */
 header {

@@ -52,6 +52,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 .modal-area {
     width: calc(100% - 20px);
@@ -873,7 +874,6 @@ footer {
     font-weight: 400;
     background-color: var(--azul-medio-forte);
     color: var(--white);
-
 }
 .footer-social-media-area {
     width: 100%;
@@ -882,20 +882,22 @@ footer {
     justify-content: space-around;
     align-items: center;
 }
+.social-media-symbol{
+    width: 25px;
+    height: 25x;
+    transition: .3s;
+}
+.social-media-symbol svg{
+    fill: white;
+}
+.social-media-symbol:hover {
+    transform: scale(1.2);
+}
 .footer-social-media-area a {
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-}
-.social-media-symbol {
-    color: var(--white);
-    font-size: 24px;
-    cursor: pointer;
-    transition: .3s;
-}
-.social-media-symbol:hover {
-    transform: scale(1.2);
 }
 footer .container {
     margin: auto;

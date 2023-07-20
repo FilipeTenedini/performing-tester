@@ -56,7 +56,7 @@ body {
 .modal-area {
     width: calc(100% - 20px);
     max-width: 560px;
-    height: 500px;
+    height: 600px;
     background-color: var(--cinza-medio-fraco);
     margin: auto;
     position: relative;
@@ -97,9 +97,6 @@ body {
     height: 100%;
     padding-left: 15px;
 }
-.how-to-use--item {
-    
-}
 .how-to-use--item a{
     color: var(--white);
 }
@@ -114,7 +111,68 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin: 5px 0;
+    margin: 10px 0 10px 0;
+}
+
+.modal-codes-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+}
+.code-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0;
+}
+.coupon-uncoded-area {
+    width: 80%;
+    min-height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed var(--chumbo);
+    background-color: var(--coupon-code-bg);
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+}
+.coupon-uncoded-text {
+    text-align: center;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--chumbo);
+}
+.copy-button {
+    color: var(--chumbo);
+    font-size: 18px;
+    position: absolute;
+    right: 10px;
+    top: 55%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+.copy-button--image {
+    width: 20px;
+    height: 20px;
+    fill: var(--chumbo);
+}
+.code-description {
+    width: 80%;
+    font-size: 11px;
+    color: var(--chumbo);
 }
 .modal-footer {
     position: absolute;
@@ -136,7 +194,7 @@ body {
     padding-top: 10px;
     margin-bottom: 5px;
 }
-.our-telegram-group--symbol ion-icon {
+.our-telegram-group--symbol svg {
     font-size: 15px;
     color: var(--white);
 }
@@ -164,9 +222,10 @@ body {
     border: 1px solid var(--white);
     margin-right: 10px;
 }
-.our-telegram-group--text ion-icon {
+.our-telegram-group--text .ionicon{
     margin-left: -2px;
-    margin-bottom: -2px;
+    border-radius: 50%;
+    width: 17px;
 }
 .modal-footer--share-our-coupons {
     flex: 1;
@@ -187,17 +246,18 @@ body {
     text-align: center;
 }
 .share-our-coupons--title {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 .share-our-coupons--links-link {
+    width: 15px;
+    height: 15px;
     color: var(--white);
     text-decoration: none;
-    font-size: 24px;
     margin: 0 5px;
 }
-/* AJUSTAR O TAMANHO DO ICONE DO TELEGRAM, BOTAR FUNDINHO e etc*/
-.our-telegram-group {
-    background-color: green;
+.share-our-coupons--links-link .ionicon {
+    width: 20px;
+    fill: var(--white);
 }
 .telegram-icon {
     background-color: #17B7F3;
@@ -214,8 +274,13 @@ body {
 }
 .share-coupon-area {
     flex: 1;
-    background-color: green;
 }
+
+
+
+
+
+
 /* HEADER */
 header {
     width: 100%;

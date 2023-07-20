@@ -60,7 +60,8 @@ body {
     background-color: var(--cinza-medio-fraco);
     margin: auto;
     position: relative;
-    border-radius: 5px
+    border-radius: 5px;
+    z-index: 100;
 }
 .modal-header,
 .modal-footer {
@@ -163,6 +164,7 @@ body {
 }
 .modal-footer--share-our-coupons {
     flex: 1;
+    display: flex;
     background-color: green;
 }
 /* AJUSTAR O TAMANHO DO ICONE DO TELEGRAM, BOTAR FUNDINHO e etc*/

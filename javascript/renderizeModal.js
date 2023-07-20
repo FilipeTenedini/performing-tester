@@ -25,3 +25,6 @@ function removeModal() {
     document.body.classList.remove('blocking-scroll');
     modal.parentNode.removeChild(modal);
 }
+function stopPropagation(event) {
+    event.stopPropagation();
+}

@@ -27,6 +27,7 @@
     --black-coupon-imagebg: #131313;
     --black-coupon-title: #333;
     --black-dashedborder-code: #333;
+    --telegram-color: #17B7F3;
 }
 * {
     margin: 0;
@@ -98,19 +99,93 @@ body {
 .how-to-use--item {
     
 }
-.modal-title--area {
-    width: 100%;
+.how-to-use--item a{
+    color: var(--white);
+}
+.modal-content {
     display: flex;
+    flex-direction: column;
+}
+.modal-coupon-title--principal {
+    color: var(--chumbo);
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
 }
 .modal-footer {
     position: absolute;
-    height: 100px;
+    min-height: 100px;
     bottom: 0;
     right: 0;
+    display: flex;
+    flex-direction: column;
     background-image: linear-gradient(var(--azul-fraco), var(--azul-medio-fraco), var(--azul-medio-forte));
     border-radius: 0 0 5px 5px;
+    color: var(--white);
+    font-size: .95em;
 }
-
+.modal-footer--our-telegram-group {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.our-telegram-group--symbol ion-icon {
+    font-size: 15px;
+    color: var(--white);
+}
+.our-telegram-group--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.our-telegram-group--text a{
+    color: var(--white);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+.our-telegram-group--text span{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--telegram-color);
+    margin-right: 10px;
+}
+.modal-footer--share-our-coupons {
+    flex: 1;
+    background-color: green;
+}
+/* AJUSTAR O TAMANHO DO ICONE DO TELEGRAM, BOTAR FUNDINHO e etc*/
+.our-telegram-group {
+    background-color: green;
+}
+.telegram-icon {
+    background-color: #17B7F3;
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.telegram-icon ion-icon {
+    font-size: 15px;
+}
+.share-coupon-area {
+    flex: 1;
+    background-color: green;
+}
 /* HEADER */
 header {
     width: 100%;

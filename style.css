@@ -187,6 +187,7 @@ body {
     border-radius: 0 0 5px 5px;
     color: var(--white);
     font-size: .95em;
+    margin-top: 10px;
 }
 .modal-footer--our-telegram-group {
     flex: 1;

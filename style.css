@@ -812,7 +812,8 @@ aside {
     padding: 5px;
     margin-bottom: 5px;
 }
-.network-component--link ion-icon {
+.network-component--link svg {
+    fill: var(--white);
     color: var(--white);
 }
 .network-component--link span {

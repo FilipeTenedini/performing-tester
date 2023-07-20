@@ -133,6 +133,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 10px;
+    margin-bottom: 5px;
 }
 .our-telegram-group--symbol ion-icon {
     font-size: 15px;
@@ -159,13 +161,39 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: var(--telegram-color);
+    border: 1px solid var(--white);
     margin-right: 10px;
+}
+.our-telegram-group--text ion-icon {
+    margin-left: -2px;
+    margin-bottom: -2px;
 }
 .modal-footer--share-our-coupons {
     flex: 1;
     display: flex;
-    background-color: green;
+    flex-direction: column;
+}
+.share-our-coupons--text {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.share-our-coupons--text a {
+    color: var(--white);
+    text-align: center;
+}
+.share-our-coupons--links {
+    flex: 1;
+    text-align: center;
+}
+.share-our-coupons--title {
+    margin-bottom: 5px;
+}
+.share-our-coupons--links-link {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 5px;
 }
 /* AJUSTAR O TAMANHO DO ICONE DO TELEGRAM, BOTAR FUNDINHO e etc*/
 .our-telegram-group {

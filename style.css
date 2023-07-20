@@ -52,12 +52,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
+    /* display: none; */
 }
 .modal-area {
     width: calc(100% - 20px);
     max-width: 560px;
-    height: 600px;
+    /* height: 600px; */
     background-color: var(--cinza-medio-fraco);
     margin: auto;
     position: relative;
@@ -107,7 +107,7 @@ body {
 }
 .modal-coupon-title--principal {
     color: var(--chumbo);
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
     text-align: center;
     display: flex;
@@ -121,7 +121,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 250px;
+    min-height: 120px;
+    /* background-color: red; */
 }
 .code-area {
     width: 100%;
@@ -176,7 +177,7 @@ body {
     color: var(--chumbo);
 }
 .modal-footer {
-    position: absolute;
+    /* position: absolute; */
     min-height: 100px;
     bottom: 0;
     right: 0;

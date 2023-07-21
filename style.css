@@ -890,7 +890,8 @@ footer {
     transition: .3s;
 }
 .social-media-symbol svg{
-    fill: white;
+    fill: var(--white);
+    color: var(--white);
 }
 .social-media-symbol:hover {
     transform: scale(1.2);

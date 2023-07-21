@@ -935,7 +935,7 @@ footer .container {
 }
 @media (min-width: 499px) {
     .principal-stores--area {
-        grid-template-columns: repeat(3, minmax(145px, 1fr));
+        grid-template-columns: repeat(4, minmax(145px, 1fr));
     }
 }
 @media(min-width: 639px) and (max-width: 1030px) {
@@ -950,6 +950,9 @@ footer .container {
 
 }
 @media (min-width: 853px) {
+    .stores-grid {
+        grid-template-columns: repeat(5, minmax(145px, 1fr));
+    }
     .coupon-info-area {
         height: auto;
     }
@@ -997,9 +1000,7 @@ footer .container {
     .nav-item:last-child {
         margin-right: 0;
     }
-    .stores-grid {
-        grid-template-columns: repeat(5, minmax(145px, 1fr));
-    }
+
     .footer-social-media-area {
         max-width: 600px;
         margin: auto;
@@ -1012,6 +1013,7 @@ footer .container {
     header input {
         height: 44px;
     }
+
     .main-container {
         flex-direction: row;
         gap: 40px;
@@ -1027,7 +1029,13 @@ footer .container {
     .coupon-code-area--text {
         font-size: 1.3em;
     }
+}    
+@media (min-width: 1120px) {
+    .stores-grid {
+        grid-template-columns: repeat(7, minmax(145px, 1fr));
+    }
 }
+
 @media (max-width: 1320px) {
     .stores-grid,
     .main-container {

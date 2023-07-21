@@ -177,7 +177,6 @@ body {
     color: var(--chumbo);
 }
 .modal-footer {
-    /* position: absolute; */
     min-height: 100px;
     bottom: 0;
     right: 0;
@@ -785,7 +784,7 @@ aside {
     background-color: var(--white);
     align-items: center;
     border-radius: 5px;
-    padding: 5px;
+    padding: 2px;
     position: relative;
     cursor: pointer;
     transition: .3s;

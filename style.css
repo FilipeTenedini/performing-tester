@@ -425,6 +425,7 @@ header input {
     width: 100%;
     max-width: 1320px;
     margin: auto;
+    margin-bottom: 30px;
     display: grid;
     grid-template-columns: repeat(2, minmax(145px, 1fr));
     grid-template-rows: repeat(4, auto);
@@ -956,6 +957,7 @@ footer .container {
 @media (min-width: 853px) {
     .stores-grid {
         grid-template-columns: repeat(5, minmax(145px, 1fr));
+        margin-bottom: 0;
     }
     .coupon-info-area {
         height: auto;
@@ -1040,6 +1042,7 @@ footer .container {
 @media (min-width: 1120px) {
     .stores-grid {
         grid-template-columns: repeat(7, minmax(145px, 1fr));
+        margin-bottom: 0;
     }
 }
 

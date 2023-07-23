@@ -57,7 +57,6 @@ body {
 .modal-area {
     width: calc(100% - 20px);
     max-width: 560px;
-    /* height: 600px; */
     background-color: var(--cinza-medio-fraco);
     margin: auto;
     position: relative;
@@ -122,7 +121,6 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 120px;
-    /* background-color: red; */
 }
 .code-area {
     width: 100%;
@@ -193,12 +191,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 10px;
+    color:var(--chumbo);
+    padding: 10px;
     margin-bottom: 5px;
-}
-.our-telegram-group--symbol svg {
-    font-size: 15px;
-    color: var(--white);
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 }
 .our-telegram-group--text {
     display: flex;
@@ -206,9 +202,10 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 16px;
 }
 .our-telegram-group--text a{
-    color: var(--white);
+    color: var(--chumbo);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -220,14 +217,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    border: 1px solid var(--white);
     margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--telegram-color);
+    background-color: var(--telegram-color);
 }
 .our-telegram-group--text .ionicon{
     margin-left: -2px;
     border-radius: 50%;
-    width: 17px;
+    width: 20px;
+    margin-bottom: -1px;
+    color: var(--telegram-color);
+}
+.our-telegram-group--text .ionicon path {
+    fill: white;
 }
 .modal-footer--share-our-coupons {
     flex: 1;
@@ -841,7 +844,7 @@ aside {
 .aside-main--area {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, minmax(105px, 1fr));
+    grid-template-columns: repeat(2, minmax(105px, 1fr));
     grid-template-rows: repeat(4, auto);
     justify-content: space-between;
     gap: 20px;
@@ -942,6 +945,9 @@ footer .container {
     .principal-stores--area {
         grid-template-columns: repeat(4, minmax(145px, 1fr));
     }
+    .aside-main--area {
+        grid-template-columns: repeat(4, minmax(105px, 1fr));
+    }
 }
 @media(min-width: 639px) and (max-width: 1030px) {
     .our-contacts--network-links {
@@ -987,6 +993,7 @@ footer .container {
     .coupon-tags-area {
         margin-bottom: 5px;
     }
+
 }
 @media (min-width: 853px) and (max-width: 904px) {
     .coupon-code-area--text {
@@ -1031,6 +1038,9 @@ footer .container {
     }
     aside {
         flex: 1;
+    }
+    .aside-main--area {
+        grid-template-columns: repeat(3, minmax(105px, 1fr));
     }
     .our-contacts--network-links {
         grid-template-columns: repeat(2, minmax(40px, 1fr));;

@@ -202,7 +202,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 16px;
 }
 .our-telegram-group--text a{
     color: var(--chumbo);
@@ -465,7 +464,6 @@ header input {
 /* COUPONS AREA */
 .main-container {
     width: calc(100% - 20px);
-    max-width: 964px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -479,6 +477,9 @@ header input {
 .list-coupons-area {
     width: 100%;
     max-width: 964px;
+}
+.list-coupons-area--title {
+    color: var(--chumbo);
 }
 .coupons-list {
     width: 100%;

@@ -392,17 +392,17 @@ header input {
 }
 .dropdown-menu {
     z-index: 1000;
+    padding: 5px 0;
     width: 125px;
     position: absolute;
-    background-color: var(--azul-fraco);
     color: #fff;
-    padding: 5px 0;
-    border-radius: 0 5px 5px 5px;
     top: 43px;
     left: 0px;
+    background-color: var(--azul-fraco);
+    border-radius: 0 5px 5px 5px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     cursor: default;
     list-style: none;
-    /* display: none; */
 }
 .dropdown-menu--item {
     padding: 5px;

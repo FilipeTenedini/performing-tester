@@ -125,10 +125,27 @@
             </div>
             <nav class="header-nav-area">
                 <ul class="header-nav">
-                    <li class="nav-item">
+                    <li class="nav-item" onclick="toggleDropdownMenu(this)">
                         <a href="#" class="nav-item-link dropdown">
                             879 lojas
                         </a>
+                        <ul class="dropdown-menu non-display">
+                            <li class="dropdown-menu--item">
+                                <a href="/lojas-populares.html" class="dropdown-menu--item-link" aria-label="Visite nossa sessão de lojas populares">
+                                    Lojas Populares
+                                </a>
+                            </li>
+                            <li class="dropdown-menu--item">
+                                <a href="/todas-as-lojas.html" class="dropdown-menu--item-link" aria-label="Veja o índice de todas as nossas lojas">
+                                    Lojas de A-Z
+                                </a>
+                            </li>
+                            <li class="dropdown-menu--item">
+                                <a href="/lojas-por-categorias.html" class="dropdown-menu--item-link" aria-label="Visite todas as categorias de nossas lojas">
+                                    Lojas por Categoria
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-item-link">
@@ -266,10 +283,10 @@
         </li>
     </ul>
 
+    <h2 class="list-coupons-area--title">Confira os melhores cupons da semana</h2>
     <div class="main-container">
         <div class="content-area">
             <main class="list-coupons-area">
-                <h2 class="list-coupons-area--title">Confira os melhores cupons da semana</h2>
                 <ul class="coupons-list">
                     <li class="coupon green-border">
                         <div class="coupon-info-area">
@@ -1142,7 +1159,7 @@
             </div>
         </div>
     </footer>
-    <script src="./javascript/renderizeModal.js"></script>
+    <script src="./javascript/events-click.js"></script>
 </body>
 
 </html>
@@ -1150,18 +1167,13 @@
 
 <!-- 
     <- TO DO ->
-fazer uma entrada pŕe cupons no estilo ''MELHORES CUPONS DA SEMANA'' utilizar o h2 para isso.
+fazer o menu
 
 botar faixinha de outra cor no footer na parrte das redes
 
 outra faixinha no compartilhar c cores diferentes
 
-em 1022 px o grid fica maior do que o tamanho da area dos coupons
-
 fazer o efeito de ao clicar no cupom ir para a outra página abrindo o modal
-
-fazer o menu
-
 
 
  <- FAZER COM ROGERS ->

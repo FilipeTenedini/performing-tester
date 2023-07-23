@@ -357,6 +357,7 @@ header input {
     background-color: var(--white);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     transition: .3s;
+    position: relative;
 }
 .nav-item-link {
     color: var(--azul-link);
@@ -389,8 +390,36 @@ header input {
     border-top: 4px solid;
     transform: translateY(-50%);
 }
-
-
+.dropdown-menu {
+    z-index: 1000;
+    width: 125px;
+    position: absolute;
+    background-color: var(--azul-fraco);
+    color: #fff;
+    padding: 5px 0;
+    border-radius: 0 5px 5px 5px;
+    top: 43px;
+    left: 0px;
+    cursor: default;
+    list-style: none;
+    /* display: none; */
+}
+.dropdown-menu--item {
+    padding: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+.dropdown-menu--item:last-child {
+    margin-bottom: 0;
+}
+.dropdown-menu--item:hover {
+    background-color:var(--azul-medio-fraco) ;
+}
+.dropdown-menu--item-link {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 400;
+}
 /* TITLE AREA */
 .title-area {
     width: 100%;
@@ -456,7 +485,6 @@ header input {
     width: 140px;
     height: 140px;
     border-radius: 4px;
-    /* border: 1px solid var(--cinza-fraco); */
     object-fit: cover;
 } 
 
@@ -479,7 +507,11 @@ header input {
     max-width: 964px;
 }
 .list-coupons-area--title {
+    width:calc(100% - 20px);
+    max-width: 1320px;
     color: var(--chumbo);
+    margin: auto;
+    margin-bottom: 20px;
 }
 .coupons-list {
     width: 100%;
@@ -931,6 +963,9 @@ footer .container {
 /* modal event css */
 .blocking-scroll {
     overflow: hidden;
+}
+.non-display {
+    display: none;
 }
 @media (max-width: 434px) {
     .header-nav-area {

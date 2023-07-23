@@ -52,7 +52,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* display: none; */
 }
 .modal-area {
     width: calc(100% - 20px);

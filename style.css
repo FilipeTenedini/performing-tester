@@ -882,7 +882,6 @@ aside {
     gap: 20px;
     list-style: none;
 }
-  
 .aside-main--card {
     min-height: 45px;
     background-color: var(--white);
@@ -983,6 +982,9 @@ footer .container {
     .aside-main--area {
         grid-template-columns: repeat(4, minmax(105px, 1fr));
     }
+    .aside-main--area.special {
+        grid-template-columns: repeat(3, minmax(105px, 1fr));
+    }
 }
 @media(min-width: 639px) and (max-width: 1030px) {
     .our-contacts--network-links {
@@ -1076,6 +1078,9 @@ footer .container {
     }
     .aside-main--area {
         grid-template-columns: repeat(3, minmax(105px, 1fr));
+    }
+    .aside-main--area.stores {
+        grid-template-columns: repeat(2, minmax(105px, 1fr));
     }
     .our-contacts--network-links {
         grid-template-columns: repeat(2, minmax(40px, 1fr));;
